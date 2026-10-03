@@ -7,7 +7,7 @@ from pathlib import Path
 st.set_page_config(page_title="Fish Species Classification",page_icon="🐟",layout="wide")
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = Path("/content/drive/MyDrive/Fish_Classification_Project/models/efficientnetb0_best.keras")
+MODEL_PATH = BASE_DIR / "models" / "efficientnetb0_best.keras"
 
 CLASS_NAMES = [
     "Black Sea Sprat",
